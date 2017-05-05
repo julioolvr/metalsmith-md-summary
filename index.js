@@ -1,4 +1,4 @@
-const debug = require('debug')('metalsmith-summary')
+const debug = require('debug')('metalsmith-md-summary')
 const minimatch = require('minimatch')
 
 const DEFAULT_OPTIONS = {

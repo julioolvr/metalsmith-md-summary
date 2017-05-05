@@ -1,5 +1,5 @@
 {
-  "name": "metalsmith-summary",
+  "name": "metalsmith-md-summary",
   "version": "0.0.1",
   "description": "Extract a summary from markdown files",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/julioolvr/metalsmith-summary.git"
+    "url": "git+https://github.com/julioolvr/metalsmith-md-summary.git"
   },
   "keywords": [
     "metalsmith-plugin",
@@ -18,9 +18,9 @@
   "author": "Julio Olivera",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/julioolvr/metalsmith-summary/issues"
+    "url": "https://github.com/julioolvr/metalsmith-md-summary/issues"
   },
-  "homepage": "https://github.com/julioolvr/metalsmith-summary#readme",
+  "homepage": "https://github.com/julioolvr/metalsmith-md-summary#readme",
   "dependencies": {
     "debug": "^2.6.6",
     "minimatch": "^3.0.3"
