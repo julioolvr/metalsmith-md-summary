@@ -1,7 +1,9 @@
 const debug = require('debug')('metalsmith-summary')
+const minimatch = require('minimatch')
 
 const DEFAULT_OPTIONS = {
-  keyword: 'READMORE'
+  keyword: 'READMORE',
+  pattern: '**/*.@(md|markdown)'
 }
 
 function plugin(userOptions) {
@@ -9,11 +11,7 @@ function plugin(userOptions) {
 
   return function(files, metalsmith, done) {
     let log = true
-    Object.keys(files).forEach(function(filename) {
-      if (!filename.endsWith('.md')) { // TODO: Replace this with minimatch
-        return;
-      }
-
+    Object.keys(files).filter(minimatch.filter(options.pattern)).forEach(function(filename) {
       const file = files[filename]
       const contents = file.contents.toString()
       const splitContent = contents.split('\n')
